@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,   /* Very light white */
+    #f0f4fa,   /* Light blue-gray */
+    #c3d7e1,   /* Light gray-blue */
+    #89b9d1,   /* Moderate blue */
+    #5e9ece,   /* Moderate blue */
+    #4a8ed5,   /* Sky blue */
+    #3491df    /* Sky blue */
+  );
+    min-height: 100vh;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.file-upload{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.upload{
+  width: 50%;
+}
+.files{
+  width: 50%;
+}
+.container{
+  position: relative;
+}
+
+.profile-button{
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 1px solid skyblue;
+  font-size: 1rem;
+}
+.profile-button:hover{
+  background: #00bfff;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.02);
+  border: 1px solid black;
+}
+
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+#uploadButton {
+  background-color: #00bfff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card{
+  background-color: rgba(255, 238, 238, 0.643);
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: -4px 8px 10px rgb(97, 102, 97);
+
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover{
+  transform: scale(1.02 );
+  cursor: pointer;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image img{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid blue;
+}
+.image div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.details h3,h2 {
+  margin: 10px 0px;
+}
+
+/* Initially hide the card */
+.hidden  {
+  display: none;
+}
+
+.file-button{
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  border: 1px solid skyblue;
+  font-size: 1rem;
+}
+.file-button:hover{
+  background: #00bfff;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.02);
+  border: 1px solid black;
+}
+.files-sec{
+  display: none;
+
+}
